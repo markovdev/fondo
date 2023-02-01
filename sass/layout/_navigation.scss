@@ -1,0 +1,240 @@
+.navbar {
+  padding: 2rem 0;
+  background: $color-grey-light-1;
+  animation: backgroundFade 0.3s ease-in;
+  transition: tranform 0.4s ease;
+  position: fixed;
+  z-index: 90;
+  width: 100%;
+  transition: all 0.4s ease;
+
+  &__logo {
+    height: 4.5rem;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 112rem;
+    @media (max-width: $small-laptops) {
+      max-width: 120rem;
+    }
+    @media (max-width: $landscape-tablets) {
+      max-width: 110rem;
+    }
+    @media (max-width: $tablets) {
+      max-width: 70rem;
+      // // width: 100%;
+      justify-content: space-between;
+    }
+    @media (max-width: $phones) {
+      max-width: 45rem;
+      // // width: 100%;
+      justify-content: space-between;
+    }
+
+    margin: 0 auto;
+  }
+  &__btn {
+    background-color: transparent;
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    z-index: 2000;
+    // padding: 1rem 3rem;
+    // position: fixed;
+    z-index: 1000;
+    border: none;
+    // top: 4rem;
+    // right: 4rem;
+    cursor: pointer;
+    text-align: center !important;
+    display: none;
+    @media (max-width: $tablets) {
+      display: block;
+    }
+    &--open {
+      opacity: 1;
+      visibility: visible;
+    }
+    &--close {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &__icon {
+    position: relative;
+    // margin-top: 2.2rem;
+    transition: all 0.5s ease;
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      display: inline-block;
+      background-color: $color-grey-dark-3;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+    &--close {
+      background-color: transparent;
+      &::after {
+        top: 0;
+        transform: rotate(-135deg);
+      }
+      &::before {
+        top: 0;
+        transform: rotate(135deg);
+      }
+    }
+  }
+  &__logo {
+    font-size: 4rem;
+    font-family: "Ravia";
+    animation: moveFromTopFade 0.6s ease-in-out;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2.4rem;
+    transition: all 0.8s;
+    @media (max-width: $tablets) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      // gap: ;
+      z-index: 100;
+      background: rgba($color-white, 0.9);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      transform: translateX(100%);
+      backdrop-filter: blur(1rem);
+
+      // gap: 3rem;
+    }
+    &--left {
+      margin-left: 6rem;
+      animation: moveFromTopFade 0.6s ease-in-out;
+      @media (max-width: $tablets) {
+        margin-left: 0;
+      }
+    }
+    &--right {
+      margin-left: auto;
+      color: $color-grey-dark-1;
+      .btn {
+        animation: scaleBottomUpFade 0.6s ease-in-out;
+      }
+      @media (max-width: $tablets) {
+        display: block;
+      }
+    }
+  }
+  &__item {
+    &--user {
+      list-style: none;
+    }
+  }
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      color: inherit;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: $primary-font-size;
+      @media (max-width: $tablets) {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+    }
+    &--user {
+      font-size: $primary-font-size !important;
+      text-decoration: none;
+      color: currentColor;
+      text-transform: uppercase;
+    }
+  }
+  &__img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    @media (max-width: $tablets) {
+      width: 10rem;
+      height: 10rem;
+      margin-bottom: 3rem;
+    }
+    @media (max-width: $phones) {
+      width: 12rem;
+      height: 12rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &--toggle {
+    transform: translateX(20%);
+  }
+
+  &--show {
+    opacity: 1;
+    visibility: visible;
+  }
+  &--close {
+    background-color: transparent;
+    transition: transform 0.5s ease;
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+  &--hidden {
+    transform: translateY(-12rem);
+    @media only screen and (max-width: $tablets) {
+      transform: translateY(0);
+    }
+  }
+  &--block {
+    // display: block !important;
+    display: flex !important;
+    margin-top: 2rem;
+  }
+  &--user {
+    position: static;
+    display: none;
+    margin-left: 4rem !important;
+
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@keyframes moveFromLeft {
+  from {
+    transform: translateX(80rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

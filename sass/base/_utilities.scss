@@ -1,0 +1,167 @@
+.u-center-text {
+  text-align: center !important;
+}
+
+// MARGIN CLASSES
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-top-small {
+  margin-top: 2rem !important;
+}
+.u-margin-top-medium {
+  margin-top: 4rem !important;
+}
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+.icon {
+  &--small {
+    width: 2rem;
+    height: 2rem;
+  }
+  &--medium {
+    width: 4rem;
+    height: 4rem;
+  }
+  &--big {
+    width: 6rem;
+    height: 6rem;
+  }
+  &--bigger {
+    width: 8rem;
+    height: 8rem;
+  }
+  &--huge {
+    width: 10rem;
+    height: 10rem;
+  }
+  &__fill {
+    &-primary {
+      fill: $color-primary;
+    }
+  }
+}
+// GRID
+
+.flex {
+  display: flex;
+  &__center {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.list {
+  display: flex;
+
+  &--coulmn {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &--row {
+    flex-direction: row;
+  }
+  &--gap {
+    &--2 {
+      gap: 1.4rem;
+    }
+  }
+  &__item {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    &--active {
+      font-weight: 600;
+      color: $color-primary;
+    }
+    &--center {
+      display: flex !important;
+      align-items: center !important;
+      // justify-content: center;+
+      // justify-content: center !important;
+      // align-items: center !important;
+    }
+  }
+  // &--center {
+  //   justify-content: center;
+  // }
+
+  &--gap--3 {
+    gap: 3rem;
+  }
+  &--gap--4 {
+    gap: 4.4rem;
+  }
+  &--gap--5 {
+    gap: 5.4rem;
+  }
+  &--gap--8 {
+    gap: 8.4rem;
+  }
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: $color-primary;
+  &--warning {
+    color: $color-warining !important;
+  }
+  &--big {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.scroll {
+  position: fixed;
+  z-index: 10;
+  right: 2rem;
+  bottom: 2rem;
+  transition: all 0.4s ease;
+  // opacity: 1;
+  transform: translateY(0);
+
+  &__btn {
+    padding: 1rem 1.6rem;
+    border: none;
+    background-color: $color-primary;
+    cursor: pointer;
+  }
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    color: $color-white;
+  }
+  &--hidden {
+    transform: translateY(12rem);
+    // opacity: 0;
+    transition: all 0.4s ease;
+  }
+}
+
+//
+.link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    
+  }&--colored {
+    color: $color-primary;
+  }
+}

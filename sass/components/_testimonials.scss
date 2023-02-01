@@ -1,0 +1,46 @@
+.testimonials {
+  padding: 4rem;
+  row-gap: 3.5rem !important;
+  @media (max-width: $landscape-tablets) {
+    padding: 5rem;
+  }
+  @media (max-width: $tablets) {
+    row-gap: 5rem !important;
+  }
+  &__box {
+    @media (max-width: $phones) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    @media (max-width: $phones) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__text {
+    font-size: $primary-font-size;
+    color: $color-grey-light-3;
+    font-weight: 500;
+    margin-top: 1.6rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.8;
+    @media (max-width: $phones) {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  &__author-box {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+  }
+  &__author {
+    color: $color-grey-light-2;
+  }
+}

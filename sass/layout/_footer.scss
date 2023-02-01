@@ -1,0 +1,90 @@
+.footer {
+  padding: 8rem 0;
+  background: #f6f6f6;
+  color: $color-grey-dark-3;
+  border-top: 1px solid $color-grey-light-1;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 6.4rem;
+    row-gap: 3.2rem;
+    @media (max-width: $tablets) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: $small-tablets) {
+      & > *:first-child {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+      }
+    }
+    @media (max-width: $phones) {
+      grid-template-columns: repeat(1, 1fr);
+      & > *:first-child {
+        grid-column: 1 /1;
+        grid-row: 4;
+      }
+    }
+  }
+  &__box {
+    &--social {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      order: -1;
+    }
+  }
+  &__logo {
+    height: 6rem;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: currentColor;
+      transition: all 0.2s ease;
+    }
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  &__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    &--facebook {
+    }
+    &--instagram {
+    }
+    &--twitter {
+    }
+    &--discord {
+    }
+  }
+  .heading--tertiary {
+    color: $color-grey-dark-3;
+    margin-bottom: 2rem;
+    @media (max-width: $tablets) {
+      margin-bottom: 2.2rem;
+    }
+    @media (max-width: $phones) {
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+    }
+    &::after {
+      content: "";
+      display: block;
+      background-color: $color-primary;
+      margin-top: 1rem;
+      width: 4.5rem;
+      height: 0.3rem;
+      border-radius: 1rem;
+      @media (max-width: $tablets) {
+        margin-top: 1.4rem;
+      }
+    }
+  }
+  .list {
+    @media (max-width: $phones) {
+      display: none;
+    }
+  }
+}

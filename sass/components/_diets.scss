@@ -1,0 +1,33 @@
+.diets {
+  background: #f4f4f4;
+  &__box {
+    border-left: 1px solid #eee;
+    background-color: $color-white;
+    padding: 4rem 2.4rem 2.8rem 2.4rem;
+    box-shadow: 0 2rem 4rem 0 rgba($color-black, 0.07);
+    border-radius: 1rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    @media (max-width: $tablets) {
+      padding: 6rem 1.4rem 1.8rem 3.2rem;
+    }
+    @media (max-width: $phones) {
+      padding: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .list__item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    &:hover {
+      transform: translateY(-1rem);
+    }
+    & > * {
+      @media (max-width: $phones) {
+        padding: 2rem 1.4rem;
+      }
+    }
+  }
+}

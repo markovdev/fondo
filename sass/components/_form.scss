@@ -1,0 +1,32 @@
+.form {
+  &__control {
+  }
+  &__label {
+    // width: 80%;
+  }
+  &__input {
+    width: 100%;
+    padding: 1.4rem 1rem 0.8rem 1rem;
+    background: rgba($color-white, 0.8);
+    border: none;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.2s ease-in-out;
+    font-size: $primary-font-size;
+    border-radius: 1rem;
+    border-bottom: 0.5rem solid transparent;
+
+    &:focus {
+      outline: none;
+      color: currentColor;
+      border-bottom: 0.5rem solid $color-granted;
+    }
+    &:focus:invalid {
+      border-bottom: 0.5rem solid $color-warining;
+    }
+
+    &::placeholder {
+      // color: currentColor;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+body {
+  font-family: $main-font-familiy;
+  color: $color-grey-dark-3;
+  font-size: $primary-font-size;
+  font-weight: $main-font-weight;
+  text-rendering: optimizeLegibility;
+}
+
+.heading {
+  &--primary {
+    color: $color-grey-dark-3;
+    @media (max-width: $small-tablets) {
+      color: $color-grey-light-1;
+    }
+    &-main {
+      display: block;
+      font-size: 4.6rem;
+      font-weight: 600;
+      margin-bottom: 2.4rem;
+      animation: scaleBottomUpFade 0.8s ease-in-out;
+      @media (max-width: $small-laptops) {
+        font-size: 5rem;
+        line-height: 1.2;
+        padding-bottom: 3rem;
+      }
+      @media (max-width: $tablets) {
+        // line-height: 0;
+      }
+      @media (max-width: $phones) {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 4rem;
+      }
+    }
+    &-sub {
+      font-size: 3.2rem;
+      font-weight: $second-font-weight;
+      color: $color-grey-dark-2;
+      // letter-spacing: 8px;
+      animation: scaleBottomUpFade 0.8s ease-in-out;
+      @media (max-width: $small-tablets) {
+        color: $color-grey-light-2;
+      }
+      @media (max-width: $small-laptops) {
+        font-size: 3rem;
+      }
+      @media (max-width: $phones) {
+        font-size: 3rem;
+        line-height: 1.8;
+        letter-spacing: 1px;
+      }
+    }
+    margin-bottom: 3.2rem;
+  }
+  &--secondary {
+    font-size: 4rem;
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    -webkit-background-clip: text;
+    clip-path: text;
+    color: transparent;
+    font-weight: 700;
+    @media (max-width: $landscape-tablets) {
+      font-size: 3rem;
+    }
+    @media (max-width: $phones) {
+      font-size: 4rem;
+    }
+  }
+  &--tertiary {
+    font-size: 2.4rem;
+    font-weight: 700;
+    @media (max-width: $landscape-tablets) {
+      font-size: 2rem;
+    }
+    @media (max-width: $phones) {
+      font-size: 3rem;
+    }
+  }
+  &--forth {
+    color: $color-grey-dark-1;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+  }
+  &--white {
+    color: $color-white;
+  }
+}

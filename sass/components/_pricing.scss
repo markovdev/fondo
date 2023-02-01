@@ -1,0 +1,50 @@
+.pricing {
+  box-shadow: 0 2.4rem 6.8rem rgba($color-black, 0.075);
+  border-radius: 1rem;
+
+  &--premium {
+    border: 3px solid $color-primary;
+  }
+  @media (max-width: $phones) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  &__heading,
+  &__details,
+  &__per-meal {
+    text-align: center;
+  }
+  &__heading {
+    font-size: 3.2rem;
+    color: $color-grey-dark-2;
+    padding: 2rem 0;
+  }
+  &__details {
+  }
+  &__price {
+    font-size: 4rem;
+    font-weight: 600;
+    color: $color-primary;
+  }
+  &__per-meal {
+    padding: 2rem;
+    border-bottom: 1px solid $color-grey-light-1;
+    font-size: 1.6rem;
+  }
+  &__icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    color: $color-primary;
+  }
+  &__text {
+    font-size: 1.6rem;
+  }
+  &__cta {
+    text-align: center;
+    padding: 2rem 3.2rem 2rem 4.5rem;
+    border-top: 1px solid $color-grey-light-1;
+  }
+  .list {
+    padding: 4rem 3.2rem 4rem 4.5rem;
+  }
+}

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern restaurant that provides healthy meals for people who wants to have a healthy life"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script defer src="js/jquery.js"></script>
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Fondo &mdash; Healthy and Tasty</title>
+  </head>
+
+  <body>
+    <div class="loader">
+      <span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>
+    </div>
+
+    <div class="main">
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a class="link" href="#header">
+            <img src="img/logo.png" class="navbar__logo" alt="Fondo logo" />
+          </a>
+          <button class="navbar__btn navbar__btn--open">
+            <span class="navbar__icon">&nbsp;</span>
+          </button>
+          <ul class="navbar__list navbar__list--left">
+            <div class="marker" id="marker"></div>
+            <li class="navbar__item"></li>
+            <li class="navbar__item">
+              <a href="#header" class="navbar__link" data-scroll="header"
+                >Home</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link" data-scroll="section--steps"
+                >Your guide</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#" data-scroll="section--pricing" class="navbar__link"
+                >Pricing</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a
+                href="#"
+                data-scroll="section--testimonials"
+                class="navbar__link"
+                >Testimonials</a
+              >
+            </li>
+
+            <li class="navbar__item">
+              <a href="#" data-scroll="section--cta" class="navbar__link"
+                >Get meal</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header class="header" id="header">
+        <div class="header__text">
+          <h1 class="heading--primary">
+            <span class="heading--primary-main"
+              >Have a <span class="header__highlight">healthy</span> food,
+              <br />
+              for <span class="header__highlight">Healthier</span> body.</span
+            ><span class="heading--primary-sub"
+              >You will fall in love with it</span
+            >
+          </h1>
+          <div class="header__cta">
+            <a href="#" class="btn btn--primary">Learn more &rarr; </a>
+            <button
+              data-scroll="section--cta"
+              class="btn btn--secondary btn--cta"
+            >
+              Get free meal &DownArrow;
+            </button>
+          </div>
+        </div>
+        <div class="header__background" src="img/hero-2.jpg">&nbsp;</div>
+      </header>
+      <main>
+        <section class="section section--steps" id="section--steps">
+          <div class="container u-margin-bottom-big">
+            <h2 class="heading--secondary">Simple 4 Steps, better schedule</h2>
+          </div>
+          <div class="container">
+            <div class="steps">
+              <div class="steps__btns">
+                <button
+                  class="steps__btn steps__btn--1 steps__btn--active"
+                  data-tab="1"
+                >
+                  <span class="steps__number">01</span> Download Our app
+                </button>
+                <button class="steps__btn steps__btn--2" data-tab="2">
+                  <span class="steps__number">02</span> Pick a plan
+                </button>
+              </div>
+              <div
+                class="steps__content steps__content--active steps__content--1"
+              >
+                <div class="steps__box">
+                  <img src="img/mobile-app.png" class="steps__img" />
+                </div>
+                <div class="steps__text">
+                  <p class="steps__heading">
+                    Get our app on Google Play and App Store
+                  </p>
+                  <p class="steps__desc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Facere rem modi sit porro culpa omnis iure sequi libero
+                    accusantium? Necessitatibus nostrum quidem tempora ex
+                    architecto.
+                  </p>
+                </div>
+              </div>
+              <div class="steps__content steps__content--2">
+                <div class="steps__tt">
+                  <p class="steps__heading">Choose what you like</p>
+                  <p class="steps__desc">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Facere rem modi sit porro culpa omnis iure sequi libero
+                    accusantium? Necessitatibus nostrum quidem tempora ex
+                    architecto. Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Cumque alias aliquid iusto eos suscipit,
+                    vel odit. Velit quidem commodi veniam! Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Nisi doloribus
+                    consequuntur ex asperiores omnis laborum ducimus autem
+                    officia dolor eos!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="section--pricing">
+          <div class="container u-margin-bottom-big">
+            <h2 class="heading--secondary">Pick a plan that benifts you</h2>
+          </div>
+          <div class="container grid grid-1-of-3">
+            <div class="pricing">
+              <p class="pricing__heading">Basic</p>
+              <p class="pricing__details">
+                <span class="pricing__price">390$</span>
+                <span class="pricing__time">/ month</span>
+              </p>
+              <p class="pricing__per-meal">13$ per meal</p>
+              <ul class="list list--coulmn">
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> 1 meal</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> 1 dessert</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> 2 drinks</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> Free delivery</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon
+                    class="icon icon--warning"
+                    name="close-outline"
+                  ></ion-icon>
+                  <span class="pricing__text"> close anytime </span>
+                </li>
+              </ul>
+              <div class="pricing__cta">
+                <a href="#" class="btn btn--primary">Add to cart</a>
+              </div>
+            </div>
+            <div class="pricing">
+              <p class="pricing__heading">Premium</p>
+              <p class="pricing__details">
+                <span class="pricing__price">660$</span>
+                <span class="pricing__time">/ month</span>
+              </p>
+              <p class="pricing__per-meal">11$ per meal</p>
+              <ul class="list list--coulmn">
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> 2 meals</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> 1 dessert</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> 2 drinks</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> Free delivery</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon
+                    class="icon icon--warning"
+                    name="close-outline"
+                  ></ion-icon>
+                  <span class="pricing__text"> close anytime </span>
+                </li>
+              </ul>
+              <div class="pricing__cta">
+                <a href="#" class="btn btn--primary">Add to cart</a>
+              </div>
+            </div>
+            <div class="pricing pricing--premium">
+              <p class="pricing__heading">Gold</p>
+              <p class="pricing__details">
+                <span class="pricing__price">810$</span>
+                <span class="pricing__time">/ month</span>
+              </p>
+              <p class="pricing__per-meal">9$ per meal</p>
+              <ul class="list list--coulmn">
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> 3 meals</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> 1 dessert</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> 2 drinks</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                  <span class="pricing__text"> Free delivery</span>
+                </li>
+                <li class="list__item list--center list--gap--1">
+                  <ion-icon
+                    class="icon icon--warning"
+                    name="close-outline"
+                  ></ion-icon>
+                  <span class="pricing__text"> close anytime </span>
+                </li>
+              </ul>
+              <div class="pricing__cta">
+                <a href="#" class="btn btn--primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="features grid grid-1-of-4">
+              <div class="features__box">
+                <ion-icon class="icon" name="leaf-outline"></ion-icon>
+                <h3 class="heading--tertiary">Beautiful Scenery</h3>
+                <p class="features__text">
+                  Eat with familly in Beautiful places in nature
+                </p>
+              </div>
+              <div class="features__box">
+                <ion-icon class="icon" name="apps-outline"></ion-icon>
+                <h3 class="heading--tertiary">Fondo App</h3>
+                <p class="features__text">
+                  It's easy to choose your favourite meals & desserts in our app
+                </p>
+              </div>
+              <div class="features__box">
+                <ion-icon class="icon" name="timer-outline"></ion-icon>
+                <h3 class="heading--tertiary">10-min delivery</h3>
+                <p class="features__text">
+                  10-min to get your meals if not, it's on us
+                </p>
+              </div>
+              <div class="features__box">
+                <ion-icon class="icon" name="bar-chart-outline"></ion-icon>
+                <h3 class="heading--tertiary">Meal Progress Bar</h3>
+                <p class="features__text">
+                  Choose a diet that fits you, with our statistcs you will know
+                  what you ate
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="section section--testimonials"
+          id="section--testimonials"
+        >
+          <div class="testimonials">
+            <div class="container u-margin-bottom-big">
+              <h2 class="heading--secondary">What our customers say...</h2>
+            </div>
+            <div class="container">
+              <div class="testimonials__grid grid grid-1-of-2 grid-gap-2">
+                <div class="testimonials__box">
+                  <p class="testimonials__text">
+                    ipsa, dicta, assumenda cupiditate, distinctio soluta veniam
+                    enim facere. Quia consequuntur ut, aliquam repudiandae illum
+                    vero quisquam ducimus, Lorem ipsum dolor sit amet
+                    consectetur.
+                  </p>
+                  <div class="testimonials__author-box">
+                    <img
+                      class="testimonials__img"
+                      src="img/user-1.jpg"
+                      alt=""
+                    />
+
+                    <p class="testimonials__author">&mdash; Raul Warren</p>
+                  </div>
+                </div>
+                <div class="testimonials__box">
+                  <p class="testimonials__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Libero quidem facere voluptate perspiciatis, impedit
+                    cupiditate, doloribus laborum facilis debitis, esse.
+                  </p>
+                  <div class="testimonials__author-box">
+                    <img
+                      class="testimonials__img"
+                      src="img/user-2.jpg"
+                      alt=""
+                    />
+
+                    <p class="testimonials__author">&mdash; Marjorie Fuller</p>
+                  </div>
+                </div>
+                <div class="testimonials__box">
+                  <p class="testimonials__text">
+                    pariatur. Beatae eos placeat saepe omnis mollitia quo labore
+                    nihil dignissimos ratione reiciendis, consequatur
+                    praesentium culpa voluptate quasi, fugit nobis alias. Aut
+                    magnam incidunt tempora.
+                  </p>
+                  <div class="testimonials__author-box">
+                    <img
+                      class="testimonials__img"
+                      src="img/user-3.jpg"
+                      alt=""
+                    />
+
+                    <p class="testimonials__author">&mdash; Bessie Steeves</p>
+                  </div>
+                </div>
+                <div class="testimonials__box">
+                  <p class="testimonials__text">
+                    fugit cupiditate! Ratione ipsam voluptate magni beatae
+                    aliquid sequi aspernatur, praesentium inventore, amet, quod
+                    repudiandae harum. Minus iusto ipsam tempore aperiam
+                    temporibus aut quia non doloribus veritatis.
+                  </p>
+                  <div class="testimonials__author-box">
+                    <img
+                      class="testimonials__img"
+                      src="img/user-4.jpg"
+                      alt=""
+                    />
+
+                    <p class="testimonials__author">&mdash; Isaiah Adams</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--cta" id="section--cta">
+          <div class="container">
+            <div class="cta">
+              <img src="img/cta.jpg" alt="" class="cta__img" />
+
+              <div class="cta__text">
+                <p class="cta__heading">
+                  Sign up and get a free meal delivered to your door.
+                </p>
+                <p class="cta__subheading">
+                  Not sure about our food? Sign up and find out if it's worthy
+                </p>
+                <form class="cta__form">
+                  <div class="cta__control">
+                    <label for="name" class="cta__label"></label>
+                    <input
+                      type="text"
+                      class="cta__input"
+                      id="name"
+                      placeholder="Your name, Please."
+                    />
+                  </div>
+                  <div class="cta__control">
+                    <label for="email" class="cta__label"></label>
+                    <input
+                      type="email"
+                      class="cta__input"
+                      id="email"
+                      placeholder="Your email, Please."
+                    />
+                  </div>
+                  <div class="cta__control">
+                    <select class="cta__select">
+                      <option value="Choose-meal" selected>Choose meal</option>
+                      <option value="meal-tuna">Tuna</option>
+                      <option value="meal-salad">Salad</option>
+                      <option value="meal-eggs">Whole eggs</option>
+                    </select>
+                  </div>
+
+                  <button class="btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section--login" id="login-section">
+          <button class="popup__btn popup__btn--login">
+            <span class="popup--close"></span>
+          </button>
+          <div class="login">
+            <h2 class="heading--secondary">Login & pick a perfect diet</h2>
+            <form class="login__form" action="#">
+              <div class="login__controll">
+                <label class="login__label" for="username">Email</label>
+                <input
+                  type="text"
+                  id="username"
+                  class="login__input"
+                  placeholder="Email, username or phone number"
+                  required
+                />
+              </div>
+              <div class="login__controll">
+                <label class="login__label" for="login-password"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  id="login-password"
+                  class="login__input"
+                  placeholder="********"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn--primary">Log in</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <!-- Social box -->
+        <div class="container footer__grid">
+          <div class="footer__box footer__box--social">
+            <div class="">
+              <img class="footer__logo" src="img/logo.png" alt="Fondo logo" />
+            </div>
+            <ul class="list list--row list--gap--2">
+              <li class="list__item">
+                <a href="" class="footer__link">
+                  <ion-icon
+                    class="footer__icon footer__icon--facebook"
+                    name="logo-facebook"
+                  ></ion-icon>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="" class="footer__link">
+                  <ion-icon
+                    class="footer__icon footer__icon--instagram"
+                    name="logo-instagram"
+                  ></ion-icon>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="" class="footer__link">
+                  <ion-icon
+                    class="footer__icon footer__icon--twitter"
+                    name="logo-twitter"
+                  ></ion-icon>
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="" class="footer__link">
+                  <ion-icon
+                    class="footer__icon footer__icon--discord"
+                    name="logo-discord"
+                  ></ion-icon>
+                </a>
+              </li>
+            </ul>
+            <p class="footer__text">
+              This project was built by
+              <a
+                href="https://twitter.com/markov_dev"
+                target="_blank"
+                class="link link--colored"
+                >Markov</a
+              >
+              for his
+              <a
+                href="https://markovdev.com"
+                target="_blank"
+                class="link link--colored"
+                >Portfolio</a
+              >.
+            </p>
+          </div>
+          <div class="footer__box">
+            <h3 class="heading--tertiary">Contact Info</h3>
+            <ul class="list list--coulmn list--gap--2">
+              <li class="list__item">help@example.com</li>
+              <li class="list__item">+01 492 4234 23</li>
+              <li class="list__item">WT St. , NY, US</li>
+            </ul>
+          </div>
+          <div class="footer__box">
+            <h3 class="heading--tertiary">Useful links</h3>
+            <ul class="list list--coulmn list--gap--2">
+              <li class="list__item">
+                <a href="#" class="footer__link">Home</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="footer__link">About</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="footer__link">Service</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="footer__link">Carrers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__box">
+            <h3 class="heading--tertiary">Support</h3>
+            <ul class="list list--coulmn list--gap--2">
+              <li class="list__item">
+                <a href="" class="footer__link">FAQ</a>
+              </li>
+              <li class="list__item">
+                <a href="" class="footer__link">Contact</a>
+              </li>
+              <li class="list__item">
+                <a href="" class="footer__link">Forums</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

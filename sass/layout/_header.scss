@@ -1,0 +1,76 @@
+.header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+
+  @media (max-width: $small-tablets) {
+    grid-template-columns: 1fr;
+    background: linear-gradient(
+        to right,
+        rgba($color-black, 0.7),
+        rgba($color-black, 0.7)
+      ),
+      url("../img/hero-2.jpg") no-repeat center center/cover;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    @media (max-width: $small-tablets) {
+      display: block;
+      color: $color-grey-light-1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @media (max-width: $tablets) {
+      margin-top: 4rem;
+    }
+    @media (max-width: $phones) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  &__background {
+    background: linear-gradient(
+        to right,
+        rgba($color-black, 0.4),
+        rgba($color-black, 0.4)
+      ),
+      url("../img/hero-2.jpg") no-repeat center center/cover;
+    @media (max-width: $small-tablets) {
+      // margin-top: 4rem;
+      background: none;
+    }
+    // background-attachment: ;
+    height: 100%;
+  }
+  &__highlight {
+    font-weight: 700;
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    clip-path: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+  }
+  &__cta {
+    @media (max-width: $phones) {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+      & > * {
+        align-self: center;
+        justify-self: center;
+      }
+    }
+  }
+}
